@@ -1,0 +1,26 @@
+.fv_navbar {
+    margin-bottom: 41px;
+    .fv_line {
+        border-top: 7px solid $primary;
+        margin-bottom: 50px;
+    }
+
+    .fv_step {
+        color: $fv-color-blue2;
+    }
+
+    .fv_step_icon {
+        font-size: 16px;
+        &.active {
+            color: $primary;
+        }
+    }
+
+    .fv_step_connection {
+        border-top: 2px solid $fv-color-blue2;
+        width: 64px;
+        &.active {
+            border-color: $primary;
+        }
+    }
+}

@@ -1,5 +1,6 @@
 @import 'node_modules/bootstrap/scss/_functions.scss';
 @import 'bootstrap_variables_customer';
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
-@import 'fonts';
-@import 'form_validation';
+@import 'fonts.scss';
+@import 'form_validation.scss';
+@import 'components/Navbar.scss';
