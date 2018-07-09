@@ -1,0 +1,14 @@
+.fv_formTitle {
+    margin-bottom: 24px;
+    h1 {
+        font: $cv-font-title;
+    }
+
+    h2 {
+        font: $cv-font-subtitle;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+}

@@ -6410,3 +6410,12 @@ a.text-dark:hover, a.text-dark:focus {
     width: 64px; }
     .fv_navbar .fv_step_connection.active {
       border-color: #0275D8; }
+
+.fv_formTitle {
+  margin-bottom: 24px; }
+  .fv_formTitle h1 {
+    font: normal 300 48px "Roboto", sans-serif; }
+  .fv_formTitle h2 {
+    font: normal 300 24px "Roboto", sans-serif; }
+  .fv_formTitle h1, .fv_formTitle h2 {
+    text-align: center; }
