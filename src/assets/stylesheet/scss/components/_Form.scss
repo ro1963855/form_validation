@@ -6,6 +6,11 @@
     font: $cv-font-form;
     margin-bottom: 8px;
     color: $black;
+    &::after {
+        content: attr(data-subtitle);
+        font: $cv-font-subtitle2;
+        margin-left: 5px;
+    }
 }
 
 .fv_form_input {

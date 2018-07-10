@@ -6427,6 +6427,10 @@ a.text-dark:hover, a.text-dark:focus {
   font: normal 400 20px "Roboto", sans-serif;
   margin-bottom: 8px;
   color: #000; }
+  .fv_form_title::after {
+    content: attr(data-subtitle);
+    font: normal 300 16px "Roboto", sans-serif;
+    margin-left: 5px; }
 
 .fv_form_input {
   border: 2px solid #000;

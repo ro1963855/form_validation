@@ -1798,6 +1798,7 @@ h2,h3{page-break-after:avoid}
 .fv_formTitle h2{font:normal 300 24px Roboto,sans-serif}
 .fv_formTitle h1,.fv_formTitle h2{text-align:center}
 .fv_form_title{font:normal 400 20px Roboto,sans-serif;margin-bottom:8px;color:#000}
+.fv_form_title::after{content:attr(data-subtitle);font:normal 300 16px Roboto,sans-serif;margin-left:5px}
 .fv_form_input{border:2px solid #000;border-radius:8px;height:52px;padding:12px 50px 16px 20px}
 .fv_form_input::placeholder{font:normal 400 20px Roboto,sans-serif;color:#999}
 .fv_form_input:focus{border-color:#0275D8;box-shadow:none}
