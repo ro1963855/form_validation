@@ -7,6 +7,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import VueLodash from 'vue-lodash';
 import './assets/stylesheet/build/all.min.css';
 import App from './App';
 import router from './router';
@@ -15,6 +16,7 @@ library.add(fas);
 library.add(far);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.use(BootstrapVue);
+Vue.use(VueLodash);
 Vue.config.productionTip = false;
 Vue.prototype.$eventHub = new Vue();
 
