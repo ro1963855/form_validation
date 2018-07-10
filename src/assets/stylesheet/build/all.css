@@ -446,8 +446,8 @@ pre {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 576px) {
@@ -465,16 +465,16 @@ pre {
 
 .container-fluid {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
   margin-right: auto;
   margin-left: auto; }
 
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
+  margin-right: -10px;
+  margin-left: -10px; }
 
 .no-gutters {
   margin-right: 0;
@@ -493,8 +493,8 @@ pre {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px; }
+  padding-right: 10px;
+  padding-left: 10px; }
 
 .col {
   flex-basis: 0;
@@ -3126,25 +3126,25 @@ input[type="button"].btn-block {
   display: flex;
   flex-direction: column; }
   .card-deck .card {
-    margin-bottom: 15px; }
+    margin-bottom: 10px; }
   @media (min-width: 576px) {
     .card-deck {
       flex-flow: row wrap;
-      margin-right: -15px;
-      margin-left: -15px; }
+      margin-right: -10px;
+      margin-left: -10px; }
       .card-deck .card {
         display: flex;
         flex: 1 0 0%;
         flex-direction: column;
-        margin-right: 15px;
+        margin-right: 10px;
         margin-bottom: 0;
-        margin-left: 15px; } }
+        margin-left: 10px; } }
 
 .card-group {
   display: flex;
   flex-direction: column; }
   .card-group > .card {
-    margin-bottom: 15px; }
+    margin-bottom: 10px; }
   @media (min-width: 576px) {
     .card-group {
       flex-flow: row wrap; }
@@ -6419,3 +6419,65 @@ a.text-dark:hover, a.text-dark:focus {
     font: normal 300 24px "Roboto", sans-serif; }
   .fv_formTitle h1, .fv_formTitle h2 {
     text-align: center; }
+
+.fv_form {
+  margin-bottom: 24px; }
+
+.fv_form_title {
+  font: normal 400 20px "Roboto", sans-serif;
+  margin-bottom: 8px;
+  color: #000; }
+
+.fv_form_input {
+  border: 2px solid #000;
+  border-radius: 8px;
+  height: 52px;
+  padding: 12px 50px 16px 20px; }
+  .fv_form_input::placeholder {
+    font: normal 400 20px "Roboto", sans-serif;
+    color: #999999; }
+  .fv_form_input:focus {
+    border-color: #0275D8;
+    box-shadow: none; }
+  .fv_form_input.is-invalid {
+    border-color: #F5A623; }
+    .fv_form_input.is-invalid:focus {
+      border-color: #F5A623;
+      box-shadow: none; }
+    .fv_form_input.is-invalid + .fv_form_warining {
+      display: block; }
+  .fv_form_input.is-valid {
+    border-color: #000; }
+    .fv_form_input.is-valid:focus {
+      border-color: #0275D8;
+      box-shadow: none; }
+
+.fv_form_warining {
+  display: none;
+  position: absolute;
+  right: 30px;
+  bottom: 16px;
+  font-size: 20px;
+  color: #F5A623; }
+
+.fv_form_submit_btn {
+  margin-top: 40px;
+  background: #0275D8;
+  border: 2px solid #0275D8;
+  border-radius: 8px;
+  width: 100%;
+  font: normal 400 20px "Roboto", sans-serif;
+  color: #fff;
+  height: 52px; }
+  .fv_form_submit_btn[disabled] {
+    background: #BEE1FF;
+    border: 2px solid #BEE1FF; }
+
+.tooltip {
+  left: 8px !important; }
+  .tooltip .tooltip-inner {
+    padding: 6px 8px;
+    background-color: #F5A623;
+    font: normal 400 14px "Roboto", sans-serif; }
+  .tooltip .arrow::before {
+    border-right-color: #F5A623; }
