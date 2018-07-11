@@ -3,5 +3,8 @@
     "blueprint.templatesPath": [
       "../blueprint-templates",
       "./.vscode/blueprint-templates"
-    ]
+    ],
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "all",
+    "prettier.arrowParens": "always",
   }

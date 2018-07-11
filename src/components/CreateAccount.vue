@@ -173,12 +173,14 @@ export default {
       }
     },
     canSubmit() {
-      return !(!this._.isEmpty(this.email.value) &&
+      return !(
+        !this._.isEmpty(this.email.value) &&
         !this._.isEmpty(this.password.value) &&
         !this._.isEmpty(this.comfirmPassword.value) &&
         this.email.isValidated &&
         this.password.isValidated &&
-        this.comfirmPassword.isValidated);
+        this.comfirmPassword.isValidated
+      );
     },
     submitForm() {
       this.$router.push('/generalInfomation');
