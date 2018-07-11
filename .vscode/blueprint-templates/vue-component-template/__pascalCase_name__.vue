@@ -6,16 +6,14 @@
 <script>
 export default {
   name: '{{ camelCase name }}',
+  components: {},
   data() {
     return {};
   },
-  created() {
-  },
-  mounted() {
-  },
+  created() {},
+  mounted() {},
   methods: {
-    test() {
-    },
+    test() {},
   },
 };
 </script>
