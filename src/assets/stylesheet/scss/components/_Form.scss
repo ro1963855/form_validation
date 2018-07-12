@@ -60,6 +60,22 @@
     color: $warning;
 }
 
+.fv_upload_warining {
+    background: $warning;
+    border: 2px solid $warning;
+    border-radius: 8px;
+    height: 52px;
+    color: $white;
+    > .fv_upload_icon {
+        font-size: 20px;
+        margin-right: 8px;
+    }
+
+    > h3 {
+        font: $cv-font-form;
+    }
+}
+
 .fv_form_submit_btn {
     margin-top: 40px;
     background: $primary;
@@ -72,6 +88,34 @@
     &[disabled] {
         background: $fv-color-blue2;
         border: 2px solid $fv-color-blue2;
+    }
+}
+
+.fv_form_upload {
+    height: 140px;
+    border: 2px solid $black;
+    border-radius: 8px;
+    color: $fv-color-gray;
+    cursor: pointer;
+    > .fv_upload_icon {
+        font-size: 45px;
+        margin-right: 20px;
+    }
+
+    > .fv_upload_desc {
+        h3 {
+            font: $cv-font-form;
+        }
+
+        h4 {
+            font: $cv-font-lable;
+            text-align: center;
+        }
+    }
+
+    &.active {
+        color: $primary;
+        border-color: $primary;
     }
 }
 

@@ -12,6 +12,9 @@ export default {
   },
   created() {},
   mounted() {},
+  watch: {
+    // test(new, old) {}
+  },
   methods: {
     test() {},
   },
