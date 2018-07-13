@@ -77,8 +77,14 @@ export default {
       vm.$nextTick(() => {
         let result = true;
         for (let i = 0; i < images.length; i += 1) {
-          if (images[i].naturalWidth > 150 || images[i].naturalHeight > 150) {
-            result = false;
+          if (images[i].complete) {
+            if (!vm.checkImgSizeIsSmallThan150x150(images[i])) {
+              result = false;
+            }
+          } else {
+            images[i].addEventListener('load', () => {
+              vm.checkImgSizeIsSmallThan150x150(images[i]);
+            });
           }
         }
         vm.isImgValidated = result;
@@ -113,9 +119,13 @@ export default {
     removeImage(index) {
       this._.remove(this.images, (image, poisition) => poisition === index);
 
-      this.images = [
-        ...this.images,
-      ];
+      this.images = [...this.images];
+    },
+    checkImgSizeIsSmallThan150x150(image) {
+      const vm = this;
+      const result = image.naturalWidth <= 150 && image.naturalHeight <= 150;
+      vm.isImgValidated = result && vm.isImgValidated;
+      return result;
     },
     submitForm() {
       this.$router.push('/paymentMethod');

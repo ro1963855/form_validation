@@ -38,7 +38,11 @@ export default {
     };
   },
   created() {
-    this.updateStep();
+    const vm = this;
+    vm.updateStep();
+    setTimeout(() => {
+      vm.$router.push('/');
+    }, 5000);
   },
   mounted() {},
   methods: {
