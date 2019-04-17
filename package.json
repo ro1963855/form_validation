@@ -9,6 +9,7 @@
     "lint": "eslint --ext .js,.vue src",
     "build": "node build/build.js",
     "start": "npm run dev",
+    "heroku-postinstall": "npm install && npm run build",
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
