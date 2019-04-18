@@ -10,6 +10,7 @@ Vue.use(Router);
 
 export default new Router({
   mode: 'history',
+  base: '/vue/form_validation/',
   routes: [
     {
       path: '/',
