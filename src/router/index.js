@@ -9,8 +9,7 @@ import FinishForm from '@/components/FinishForm';
 Vue.use(Router);
 
 export default new Router({
-  mode: 'history',
-  base: '/vue/form_validation/',
+  mode: "history",
   routes: [
     {
       path: '/',
